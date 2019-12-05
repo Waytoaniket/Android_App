@@ -27,4 +27,78 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">32sp</item>
     </style>
+
+    <!-- EditText -->
+
+    <!-- TextViewLarge -->
+
+    <!-- TextViewSmall -->
+
+    <!-- Button -->
+
+    <!-- Password -->
+
+    <!-- E-mail -->
+
+    <!-- Phone -->
+
+    <!-- Postal Address -->
+
+    <!-- Multiline Text -->
+
+    <!-- Time -->
+
+    <!-- Date -->
+
+    <!-- Number -->
+
+    <!-- AutoCompleteTextView -->
+
+    <!-- CheckedTextView -->
+
+    <!-- TextInputLayout -->
+
+    <!-- ImageButton -->
+
+    <!-- ChipGroup -->
+
+    <!-- Chip -->
+
+    <!-- Checkbox -->
+
+    <!-- ImageView -->
+
+    <!-- CalenderView -->
+
+    <!-- VideoView -->
+
+    <!-- ProgressBar -->
+
+    <!-- RatingBar -->
+
+    <!-- HorizontalDivider -->
+
+    <!-- VerticalDivider -->
+
+    <!-- TableLayout -->
+
+    <!-- TableRow -->
+
+    <!-- RequestFocus -->
+
+    <!-- Toolbar -->
+
+    <!-- RecyclerView -->
+
+    <!-- ScrollView -->
+
+    <!-- MapView -->
+
+    <!-- ViewPager -->
+
+    <!-- CardView -->
+
+    <!-- ViewStub -->
+
+    <!--  -->
 </resources>
