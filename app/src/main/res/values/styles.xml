@@ -21,11 +21,6 @@
         <item name="titleTextStyle">@style/CustomActionBarTitle.ActionBarTitle</item>
     </style>
 
-<!--    <style name="EditTextLarge">-->
-<!--        <item name=""></item>-->
-<!--    </style>-->
-
-    <!-- EditText -->
     <style name="CustomActionBarTitle.ActionBarTitle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
         <item name="android:textColor">@color/colorAccent</item>
         <item name="android:textAppearance">@android:style/TextAppearance.DeviceDefault.Large</item>
