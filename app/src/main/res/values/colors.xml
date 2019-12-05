@@ -8,4 +8,6 @@
     <color name="colorPrimaryDark">#3A7A74</color>
     <color name="colorAccent">#FF0000</color>
 
+    <color name="progress_bar">#FC5353</color>
+    <color name="secondary_progress_bar">#9DE9DF</color>
 </resources>
