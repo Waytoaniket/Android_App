@@ -87,12 +87,42 @@
     <!-- ImageView -->
 
     <!-- CalenderView -->
-
+    <style name="CustomCalendarView" >
+<!--        <item name=""></item>-->
+    </style>
     <!-- VideoView -->
+    <style name="CustomVideoView" >
+
+    </style>
 
     <!-- ProgressBar -->
+    <!-- Circular Progress Bar -->
+    <style name="CustomProgressBar" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateProgressStyle">@android:id/progress</item>
+        <item name="android:indeterminateDrawable">@drawable/circular_progress_bar</item>
+<!--        <item name="android:visibility">gone</item>-->
+        <item name="android:background">@color/progress_bar</item>
+<!--        <item name="android:layout_width">100dp</item>-->
+        <item name="android:indeterminateTint">@color/progress_bar</item>
+    </style>
+
+    <!-- Horizontal Progress Bar -->
+    <style name="CustomProgressBarHorizontal" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:indeterminateTint">@color/progress_bar</item>
+        <item name="android:secondaryProgressTint">@color/progress_bar</item>
+        <item name="android:progressBackgroundTint">@color/secondary_progress_bar</item>
+        <item name="android:minWidth">40dp</item>
+        <item name="android:minHeight">100dp</item>
+    </style>
 
     <!-- RatingBar -->
+    <style name="CustomRatingBar" parent="@style/Widget.AppCompat.RatingBar">
+
+    </style>
+
+    <style name="CustomRatingBarIndicator" parent="@style/Widget.AppCompat.RatingBar.Indicator">
+        
+    </style>
 
     <!-- HorizontalDivider -->
 
