@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_header">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Account"
+            android:textSize="15dp"
+            android:textColor="#1E6DBC" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginTop="2dp"
+            android:text="INCOME"
+            android:textStyle="bold"
+            android:textColor="#EA0909"
+            android:textSize="15sp" />
+
+
+
+        <Button
+            android:id="@+id/button_all"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="-80dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_left_effect"
+            android:text="All"
+            android:gravity="center_vertical"
+            android:textColor="#009788"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_weekly"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_on_click"
+            android:text="Today"
+            android:gravity="center_vertical"
+            android:textColor="#009788"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_monthly"
+            android:layout_width="72dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/button_on_click"
+            android:text="Monthly"
+            android:textColor="#009788"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_yearly"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_right_effect"
+            android:text="Yearly"
+            android:textColor="#009788"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-343dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="6dp"
+            android:text="Date Range"
+            android:textSize="15sp"
+            android:textColor="#009788" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="85dp"
+        android:background="#ffffff"
+        android:id="@+id/layout_handel"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="142dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="Family Id"
+            android:layout_marginStart="1dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="1dp"
+            android:background="@drawable/border_color"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="12sp"/>
+        <TextView
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:paddingStart="5dp"
+            android:paddingEnd="1dp"
+            android:background="@drawable/border_color"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="12sp"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:paddingStart="5dp"
+            android:paddingEnd="1dp"
+            android:background="@drawable/border_color"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_color"
+            android:paddingEnd="1dp"
+            android:text="Mode Of Payment"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="165dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle_for_updation_of_income"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/Addition_of_income"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="515dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/round_button_for_update"
+        android:src="@mipmap/ic_launcher_add" />
+
+
+
+
+
+
+</RelativeLayout>

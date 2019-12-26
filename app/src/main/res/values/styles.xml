@@ -33,7 +33,7 @@
 
     <!-- EditText -->
     <style name="EditTextStyle">
-        <item name="android:background">@drawable/input_field_border</item>
+<!--        <item name="android:background">@drawable/input_field_border</item>-->
     </style>
     <!-- TextViewLarge -->
     <style name="TextViewLarge">
@@ -48,7 +48,7 @@
 
     <!-- Button -->
     <style name="Button">
-        <item name="android:background">@drawable/button</item>
+<!--        <item name="android:background">@drawable/button</item>-->
         <item name="android:textSize">20sp</item>
         <item name="android:textColor">@color/textColor</item>
         <item name="android:textAlignment">center</item>
@@ -108,11 +108,12 @@
 
     <!-- Horizontal Progress Bar -->
     <style name="CustomProgressBarHorizontal" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
-        <item name="android:indeterminateTint">@color/progress_bar</item>
+        <item name="android:indeterminateTint">@color/colorAccent</item>
         <item name="android:secondaryProgressTint">@color/progress_bar</item>
         <item name="android:progressBackgroundTint">@color/secondary_progress_bar</item>
-        <item name="android:minWidth">40dp</item>
-        <item name="android:minHeight">100dp</item>
+        <item name="android:minWidth">200dp</item>
+        <item name="android:minHeight">30dp</item>
+<!--        <item name="android:progressDrawable">@drawable/horizontal_progress_bar</item>-->
     </style>
 
     <!-- RatingBar -->
@@ -122,6 +123,10 @@
 
     <style name="CustomRatingBarIndicator" parent="@style/Widget.AppCompat.RatingBar.Indicator">
         
+    </style>
+    <style name="AppTheme.Splash" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
     </style>
 
     <!-- HorizontalDivider -->

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/updation_background"
+    >
+
+    <TextView
+        android:id="@+id/Family_Id"
+        android:layout_width="104dp"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="@string/family_id"
+        android:textColor="#FA111111"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Username"
+        android:layout_width="94dp"
+        android:layout_height="39dp"
+        android:gravity="center"
+        android:text="@string/username"
+        android:textColor="#FA111111"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Family_Id"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Amount_Paid"
+        android:layout_width="101dp"
+        android:layout_height="39dp"
+        android:gravity="center"
+        android:text="@string/amount"
+        android:textColor="#FA111111"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Username"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Payment_Method"
+        android:layout_width="111dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="@string/payment_method"
+        android:textColor="#FA111111"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Amount_Paid"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
