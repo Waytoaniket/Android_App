@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:id="@+id/month_spinner"
-    android:layout_height="wrap_content"
+    android:layout_height="55dp"
     >
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -15,33 +15,23 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Year"
             android:textColor="#1E6DBC"
             android:textSize="15sp"
             android:layout_marginStart="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.09"
-            tools:ignore="MissingConstraints" />
+            android:layout_width="wrap_content" />
 
         <Spinner
-            android:id="@+id/sp_month"
+            android:id="@+id/sp_year1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@drawable/border_color"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
             android:focusableInTouchMode="true"
             android:padding="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            tools:ignore="MissingConstraints"></Spinner>
+            />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 </LinearLayout>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.template">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:networkSecurityConfig="@xml/network_config">
-
+        android:theme="@style/AppTheme">
         <activity
             android:name=".Splashscreen"
             android:theme="@style/AppTheme.Splash">
@@ -20,19 +21,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".finance.addition_of_income"
-            android:windowSoftInputMode="adjustResize"
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".finance.addition_of_income"
             android:resizeableActivity="true"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name=".finance.Edit"
-            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".finance.Edit"
             android:resizeableActivity="true"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name=".finance.myfinance"
-            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".finance.myfinance"
             android:resizeableActivity="true"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

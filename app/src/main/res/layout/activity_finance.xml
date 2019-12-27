@@ -91,12 +91,11 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_marginTop="85dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="83dp"
         android:background="#ffffff"
         android:id="@+id/layout_handel"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal">
+        android:orientation="vertical">
 
 
 
