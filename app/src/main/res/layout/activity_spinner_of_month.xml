@@ -1,69 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:id="@+id/spinner_of_month"
-    android:layout_height="57dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
     >
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="horizontal" android:layout_width="match_parent"
 
+    <TextView
+        android:id="@+id/month"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
+        android:layout_marginEnd="100dp"
 
-            android:layout_marginBottom="6dp"
-            android:text="Month"
-            android:textSize="15sp"
-            android:textColor="#1E6DBC"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="200dp"
+        android:text="Month"
+        android:textAlignment="center"
+        android:textColor="#009788"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/year"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            android:layout_marginBottom="6dp"
-            android:text="Year"
-            android:textSize="15sp"
-            android:textColor="#1E6DBC"/>
-    </LinearLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:orientation="horizontal" android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        >
+        android:layout_marginEnd="80dp"
+        android:text="Year"
+        android:textAlignment="center"
+        android:textColor="#009788"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/month"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <Spinner
-            android:id="@+id/sp_month"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="2dp"
-            android:padding="20dp"
-            android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/sp_year"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:focusableInTouchMode="true"
-            android:defaultFocusHighlightEnabled="true"
+    <Spinner
+        android:id="@+id/Spinner_of_month"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:focusableInTouchMode="true"
+        android:gravity="top"
+        app:layout_constraintEnd_toStartOf="@+id/Spinner_of_year"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"></Spinner>
 
-            />
+    <Spinner
+        android:id="@+id/Spinner_of_year"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:focusableInTouchMode="true"
+        android:gravity="top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Spinner_of_month"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"></Spinner>
 
-        <Spinner
-            android:id="@+id/sp_year"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:padding="20dp"
-            android:layout_marginLeft="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/sp_month"
-            android:layout_marginBottom="2dp"
-            app:layout_constraintTop_toTopOf="parent"/>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
